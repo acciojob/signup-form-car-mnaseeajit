@@ -9,25 +9,31 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<form method="post">
-		<lable for='name'>Name :</lable>
+		<label for="name">Name :</label>
 		<input type="text" id="name" placeholder="Name" required><br><br>
-		<lable for='email'>Email :</lable>
+		<label for="email">Email :</label>
 		<input type="Email" id="email" placeholder="Email" required><br><br>
-		<lable for="gender_f">Gender :</lable>
-		<lable>male</lable>
+		<label for="gender_f">Gender :</label>
+		<label>male</label>
 		<input type="radio" id="gender_m" name="gender"  required>
-		<lable>female</lable><input type="radio" id="gender_f" name="gender"  required><br><br>
-		<lable for="cars">Car Brands :</lable>
-		<input type="select" id="cars" placeholder="--please choose an option--" required><br><br>
-		<lable for='age'>Age :</lable>
+		<label>female</label><input type="radio" id="gender_f" name="gender"  required><br><br>
+		<label for="cars">Car Brands :</label>
+		<select id="cars" required>
+    <option value="">--please choose an option--</option>
+    <option value="audi">Audi</option>
+    <option value="bmw">BMW</option>
+    <option value="mercedes">Mercedes-Benz</option>
+    <!-- Add more options as needed -->
+</select><br><br>
+		<label for="age">Age :</label>
 		<input type="Number" id="age" placeholder="Age" required><br><br>
-		<lable for='dob'>DOB :</lable>
+		<label for="dob">DOB :</label>
 		<input type="date" id="dob"  required><br><br>
-		<lable for='tel'>Phone Number :</lable>
+		<label for="tel">Phone Number :</label>
 		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx" ><br><br>
-		<lable for='password'>Password :</lable>
+		<label for="password">Password :</label>
 		<input type="Password" id="password" placeholder="Password" required><br><br>
-		<lable for='tos'>I agree to the TOS :</lable>
+		<label for="tos">I agree to the TOS :</label>
 		<input type="checkbox" id="tos"  required><br><br>
 		<button type="submit">submit</button>
 	</form>
